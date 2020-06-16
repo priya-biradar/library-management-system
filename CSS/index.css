@@ -1,0 +1,338 @@
+
+* {
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0;
+            .mySlides {display: none;}
+            img {vertical-align: middle;}
+
+        }
+
+        body {
+            font-family: 'Angsana New ';
+        }
+        .log
+        {
+            padding-left: 10px;
+            padding-bottom: 40px;
+            padding-top: 40px;
+
+        }
+        .size
+        {
+           padding-top: 20px; 
+        }
+
+        .navbar {
+            font-size: 18px;
+            background-image: linear-gradient(260deg, #d147a3 0%, #5f0a87 100%);
+            border: 1px solid rgba(0, 0, 0, 0.2);
+            padding-bottom: 10px;
+            padding-right: 50px;
+        }
+
+        .main-nav {
+            list-style-type: none;
+            display: none;
+        }
+
+        .nav-links,
+        .logo {
+            text-decoration: none;
+            color: rgba(255, 255, 255);
+        }
+
+        .main-nav li {
+            text-align: center;
+            margin: 15px auto;
+        }
+
+        .logo {
+            display: inline-block;
+            font-size: 22px;
+            margin-top: 10px;
+            margin-left: 20px;
+        }
+
+        .navbar-toggle {
+            position: absolute;
+            top: 10px;
+            right: 20px;
+            cursor: pointer;
+            color: rgba(255, 255, 255, 0.8);
+            font-size: 24px;
+        }
+
+        .active {
+            display: block;
+        }
+
+        @media screen and (min-width: 768px) {
+            .navbar {
+                display: flex;
+                justify-content: space-between;
+                padding-bottom: 0;
+                height: 70px;
+                align-items: center;
+            }
+
+            .main-nav {
+                display: flex;
+                margin-right: 30px;
+                flex-direction: row;
+                justify-content: flex-end;
+            }
+
+            .main-nav li {
+                margin: 0;
+            }
+
+            .nav-links {
+                margin-left: 40px;
+            }
+
+            
+            .navbar-toggle {
+                display: none;
+            }
+
+            
+        }
+
+
+
+        select { 
+                appearance: none; 
+                outline: 0; 
+                background: white; 
+                background-image: none; 
+                width: 100%; 
+                height: 100%; 
+                color: black; 
+                cursor: pointer; 
+                border:1px solid black; 
+                border-radius:3px; 
+            } 
+            .select { 
+                position: relative; 
+                display: block; 
+                width: 15em; 
+                height: 2em; 
+                line-height: 3; 
+                overflow: hidden; 
+                border-radius: .25em; 
+                padding-bottom:10px; 
+                  
+            } 
+            h1 { 
+                color: #d147a3; 
+            } 
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1300px;
+  position: relative;
+  margin: auto;
+}
+
+/* Caption text */
+.text {
+  color: 2px solid black;
+  font-size: 25px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+
+
+/* Button used to open the contact form - fixed at the bottom of the page */
+.open-button {
+  
+  background-color: #d147a3;
+  color: white;
+  padding: 10px 20px 5px 20px;
+  border: none;
+  cursor: pointer;
+  position:relative;
+  left: 20px;
+  text-align: center;
+
+  }
+
+.open-button-login {
+  
+  text-align: center;
+
+  background-color: #d147a3;
+  color: white;
+  padding: 10px 10px 5px 20px;
+  border: none;
+  cursor: pointer;
+  position:relative;
+  left: 45px;
+  }
+
+
+
+/* The popup form - hidden by default */
+.form-popup {
+  display: none;
+  position: absolute;
+  top: 10px;
+  right: 500px;
+  border: 3px solid #6600cc;
+  z-index: 9;
+}
+.loginform-popup {
+  display: none;
+  position: fixed;
+  bottom: 180px;
+  right: 500px;
+  border: 3px solid #6600cc;
+  z-index: 9;
+}
+
+h3
+{
+  color:#d147a3;
+}
+
+/* Add styles to the form container */
+.form-container {
+  max-width: 300px;
+  padding: 10px;
+  background-color: white;
+}
+.form-container-login {
+  max-width: 300px;
+  padding: 10px;
+  background-color: white;
+}
+
+
+/* Full-width input fields */
+.form-container input[type=text], .form-container input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+}
+
+/* When the inputs get focus, do something */
+.form-container input[type=text]:focus, .form-container input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Full-width input fields */
+.form-container-login input[type=text], .form-container-login input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+}
+
+/* When the inputs get focus, do something */
+.form-container-login input[type=text]:focus, .form-container-login input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+
+
+/* Set a style for the submit/login button */
+.form-container .btn {
+  background-color: #5f0a87;
+  color: white;
+  padding: 10px 40px;
+  border-radius: 45px;
+  border: none;
+  cursor: pointer;
+  margin-bottom:10px;
+  opacity: 0.7;
+}
+
+/* Set a style for the submit/login button */
+.form-container-login .btnlog {
+  background-color: #5f0a87;
+  color: white;
+  padding: 10px 45px;
+  border-radius: 45px;
+  border: none;
+  cursor: pointer;
+  margin-bottom:10px;
+  opacity: 0.7;
+}
+
+
+/* Add a red background color to the cancel button */
+.form-container .cancel {
+  background-color: red;
+}
+
+/* Add a red background color to the cancel button */
+.form-container-login .cancellog {
+  background-color: red;
+}
+
+/* Add some hover effects to buttons */
+.form-container .btn:hover, .open-button:hover {
+  opacity: 1;
+}
+
+ /*Add some hover effects to buttons */
+.form-container-login .btnlog:hover, .open-button-login:hover {
+  opacity: 1;
+}
+
+
