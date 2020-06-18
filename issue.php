@@ -119,7 +119,7 @@ echo "<script>alert('sorry!stock unavailable !');document.location='issue.php'</
 
  $final="insert into issue values(NULL,'".$_POST["userId"]."','".$_POST["name"]."','".$_POST["mail"]."','".$_POST["contact"]."','".$_POST["textBook"]."','".$_POST["dt"]."','')";
 
-//mysqli_query($con,"update books set available_qty=available_qty-1 where book_name= '".$_POST["textBook"]."' ");
+mysqli_query($con,"update books set available_qty=available_qty-1 where book_name= '".$_POST["textBook"]."' ");
 
      $see=mysqli_query($con,$final);
 
