@@ -19,7 +19,7 @@ var id = document.forms["RegForm"]["user"];
 
 if (id.value == "")                
   { 
-  document.getElementById('ierror').innerHTML = "<span style='color: red;'>enter your id</span>";
+  document.getElementById('ierror').innerHTML = "<span style='color: red;'>enter your id(10 digits only)</span>";
     id.focus(); 
    
   } 
@@ -78,7 +78,7 @@ if (contact.value == "")
 
 if (password.value == "")          
   { 
-  document.getElementById('perror').innerHTML = "<span style='color: red;'>enter the password</span>";
+  document.getElementById('perror').innerHTML = "<span style='color: red;'>enter the password(min 8 characters)</span>";
     password.focus();   
   
   } 
