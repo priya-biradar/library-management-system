@@ -1,7 +1,6 @@
 <?php require_once('db.php');?>
 <?php
 session_start();
-
 ?>
 <html>
 <head>
@@ -114,7 +113,6 @@ if(name.value==""||password.value==""||id.value==""||password.value.length<8||ui
   {
   return false; 
     }
- 
 return true;
   }
 </script>
